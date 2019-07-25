@@ -13,3 +13,15 @@ var params = {
     middleware: [function(req, res, next) { next(); }] // Takes an array of Connect-compatible middleware that are injected into the server middleware stack
 };
 liveServer.start(params);
+
+window.onload=function(){
+    var lis=document.getElementById('target_ul').getElementsByTagName('li');
+    for(i=0;i<lis.length;i++) { 
+        lis[i].onclick=myFunction;
+    }
+}
+
+function myFunction()
+{
+    alert('This list item contains "'+this.innerHTML+'"');
+}
