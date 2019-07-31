@@ -1,4 +1,21 @@
 h2{
-    background-color: lightgreen;
     font-family: unset;
+}
+.nav {
+    background-color: lightgreen;
+    color: #ffffff;
+    list-style: none;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+.nav > li {
+    display: inline-block;
+    padding: 0 25px 0 25px;
+}
+.nav > li > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav > li > a:hover {
+    color: black;
 }
